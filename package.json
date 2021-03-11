@@ -1,0 +1,26 @@
+{
+  "name": "podkatki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./server/index.js",
+    "start": "node ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kulin91/podkatki.git"
+  },
+  "author": "Alexandr Kulinkovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kulin91/podkatki/issues"
+  },
+  "homepage": "https://github.com/kulin91/podkatki#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
