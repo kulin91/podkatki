@@ -54,13 +54,19 @@
   font-weight: bold;
   font-size: 14px;
   color: white;
+  text-decoration: none;
 }
 
-.header-links {
+.header-links a {
   padding-left: 12px;
   font-weight: bold;
   font-size: large;
+  transition: background-color 1s linear;
 }
+
+.header-links:hover {
+  background-color: #3F51B5;
+  }
 
 .main {
   display: flex;
@@ -78,7 +84,7 @@
   position: relative;*/
 }
 
-/*.background-video-container {
+.background-video-container {
   background-color: rgb(5, 5, 5);
   opacity: .3;
   position: absolute;
@@ -86,12 +92,12 @@
   left:0;
   right:0;
   bottom:0;
-}*/
+}
 
-/*.background-video {
+.background-video {
   width: 100%;
   height: 100%;
-}*/
+}
 
 /* .first-screen-box {
    margin-top: 250px;
@@ -105,6 +111,19 @@
   align-items: center;
   text-align: center;
   font-size: xx-large;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.first-screen-title._active {
+  margin-bottom: 60px;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .first-screen-description {
@@ -112,6 +131,20 @@
   font-size: large;
   margin-left: 200px;
   margin-right: 200px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.4s;
+}
+
+.first-screen-description._active {
+  text-align: center;
+  font-size: large;
+  margin-left: 200px;
+  margin-right: 200px;
+
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .about-me-screen {
@@ -309,12 +342,58 @@
   justify-content: center;
   align-items: center;
   display: flex;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.training-screen-right-title._active {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .training-screen-right-title-description {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.training-points li{
+  transform: translate(-30%, 0px);
+  transition: all 0.3s ease 0s;
+}
+
+.training-points._active li:nth-child(1){
+  transition: all 0.8s ease 0s;
+}
+
+.training-points._active li:nth-child(2){
+  transition: all 0.8s ease 0.1s;
+}
+
+.training-points._active li:nth-child(3){
+  transition: all 0.8s ease 0.2s;
+}
+
+.training-points._active li:nth-child(4){
+  transition: all 0.8s ease 0.3s;
+}
+
+.training-points._active li:nth-child(5){
+  transition: all 0.8s ease 0.4s;
+}
+
+.training-points._active li:nth-child(6){
+  transition: all 0.8s ease 0.5s;
+}
+
+.training-points._active li{
+  transform: translate(0px, 0px);
 }
 
 .training-screen-right-title-description ul {
@@ -452,7 +531,7 @@
 }
 
 .price-screen-attention {
-  padding-left: 64px;
+  padding-left: 128px;
 }
 
 .price-subscription-training-types {
