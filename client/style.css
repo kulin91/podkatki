@@ -57,14 +57,14 @@
   text-decoration: none;
 }
 
-.header-links a {
+.header-linkss {
   padding-left: 12px;
   font-weight: bold;
   font-size: large;
   transition: background-color 1s linear;
 }
 
-.header-links:hover {
+.header-linkss:hover {
   background-color: #3F51B5;
   }
 
