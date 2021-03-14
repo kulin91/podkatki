@@ -69,3 +69,36 @@ setInterval(
     fade_to_next();
   }, interval
 );
+
+
+let scrollHeight = 605;
+const headerLinks = document.getElementById('header-link');
+
+const scrollHandler = (event) => {
+  switch (event.target.id) {
+    case 'header-link__about-me': {
+      scrollHeight = 605;
+      break;
+    }
+    case 'header-link__contacts': {
+      scrollHeight = 1210;
+      break;
+    }
+    case 'header-link__contacts': {
+      scrollHeight = 1210;
+      break;
+    }
+    default: {
+      scrollHeight = null;
+    }
+  }
+
+  if (scrollHeight !== null) {
+    window.scrollTo({
+      top: scrollHeight,
+      behavior: "smooth"
+    });
+  }
+}
+
+headerLinks.addEventListener('click', scrollHandler);

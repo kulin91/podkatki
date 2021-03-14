@@ -59,10 +59,11 @@
 }
 
 .header-links-number:hover{
-  color: #0c4bd4;
+  color: #f38609;
 }
 
 .header-link {
+  cursor: pointer;
   padding-left: 12px;
   font-weight: bold;
   font-size: large;
@@ -70,7 +71,7 @@
 }
 
 .header-link:hover {
-  color: #0c4bd4;
+  color: #f38609;
   }
 
 .main {
