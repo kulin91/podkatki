@@ -71,21 +71,38 @@ setInterval(
 );
 
 
-let scrollHeight = 605;
-const headerLinks = document.getElementById('header-link');
+let scrollHeight = 0;
+
+const headerLinks = document.getElementById('header-links');
+const firstScreen = document.getElementById('first-screen-id').offsetHeight;
+const aboutMeScreen = document.getElementById('about-me-screen-id').offsetHeight;
+const trainingScreen = document.getElementById('training-screen-id').offsetHeight;
+const priceScreen = document.getElementById('price-screen-id').offsetHeight;
+const contactsScreen = document.getElementById('contacts-screen-id').offsetHeight;
+
+const screenHeights = {
+  aboutMe: firstScreen,
+  training: firstScreen + aboutMeScreen,
+  price: firstScreen + aboutMeScreen + trainingScreen,
+  contacts: firstScreen + aboutMeScreen + trainingScreen + priceScreen,
+}
 
 const scrollHandler = (event) => {
   switch (event.target.id) {
     case 'header-link__about-me': {
-      scrollHeight = 605;
+      scrollHeight = screenHeights.aboutMe;
+      break;
+    }
+    case 'header-link__training': {
+      scrollHeight = screenHeights.training;
+      break;
+    }
+    case 'header-link__price': {
+      scrollHeight = screenHeights.price;
       break;
     }
     case 'header-link__contacts': {
-      scrollHeight = 1210;
-      break;
-    }
-    case 'header-link__contacts': {
-      scrollHeight = 1210;
+      scrollHeight = screenHeights.contacts;
       break;
     }
     default: {
