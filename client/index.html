@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   <title>Подкатки ХК</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,17 +24,17 @@
 
       </div>
       <div class="header-box-right">
-        <div class="header-links">
-          <a class="header-link">Обо мне</a>
-          <a class="header-link">Услуги</a>
-          <a class="header-link">Цены</a>
-          <a class="header-link">Контакты</a>
+        <div id="header-links" class="header-links">
+          <a id="header-link__about-me" class="header-link">Обо мне</a>
+          <a id="header-link__training" class="header-link">Услуги</a>
+          <a id="header-link__price" class="header-link">Цены</a>
+          <a id="header-link__contacts" class="header-link">Контакты</a>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="first-screen">
+    <div id="first-screen-id" class="first-screen">
       <div class="background-video-container">
         <video class="background-video" autoplay muted loop>
           <source src="/assets/videos/preview.mp4" type="video/mp4">
@@ -49,10 +50,8 @@
         </div>
       </div>
     </div>
-    <div class="screen-title"></div>
-    <div class="about-me-screen">
+    <div id="about-me-screen-id" class="about-me-screen">
       <div class="about-me-box">
-
         <div class="about-me-container">
           <div class="about-me-screen-left">
             <div class="about-me-screen-left-box">
@@ -125,171 +124,228 @@
         </div>
       </div>
     </div>
-    <div class="screen-title">
-      Услуги
-    </div>
-    <div class="training-screen">
-      <div class="training-screen-left">
-        <div class="training-screen-box">
-          <div class="training-screen-container">
-            <img src="assets/images/ice-photo.jpg" alt="hockey">
-          </div>
-        </div>
+    <div id="training-screen-id">
+      <div class="screen-title">
+        Услуги
       </div>
-      <div class="training-screen-right">
-        <div class="training-screen-block">
-          <div class="training-screen-right-title _anim-items">
-            <h2>Тренировка на льду
-            </h2>
-            <hr class="price-subscription-training-types-line">
-          </div>
-          <div class="training-screen-right-title-description">
-            <ul class="training-points _anim-items">
-              <li>Обучение катанию на коньках "с нуля"</li>
-              <li>Маневренное катание</li>
-              <li>Силовое катание</li>
-              <li>Освоение набора обманных движений</li>
-              <li>Обучение навыку отбора шайбы и единоборств</li>
-              <li>Тренировка точности пасса</li>
-            </ul>
+      <div class="training-screen">
+        <div class="training-screen-left">
+          <div class="training-screen-box">
+            <div class="training-screen-container">
+              <img src="assets/images/ice-photo.jpg" alt="hockey">
+            </div>
           </div>
         </div>
-        <div class="training-screen-block">
-          <div class="service-screen-price-title">
-            <h3>Цена:</h3>
+        <div class="training-screen-right">
+          <div class="training-screen-block">
+            <div class="training-screen-right-title _anim-items">
+              <h2>Тренировка на льду
+              </h2>
+              <hr class="price-subscription-training-types-line">
+            </div>
+            <div class="training-screen-right-title-description">
+              <ul class="training-points _anim-items">
+                <li>Обучение катанию на коньках "с нуля"</li>
+                <li>Маневренное катание</li>
+                <li>Силовое катание</li>
+                <li>Освоение набора обманных движений</li>
+                <li>Обучение навыку отбора шайбы и единоборств</li>
+                <li>Тренировка точности пасса</li>
+              </ul>
+            </div>
           </div>
-          <div class="service-screen-price">
-            <div class="service-screen-price-bottom">
-              <div class="service-screen-price-container">
-                <div class="service-screen-personal">
-                  <div>Индивидуальная</div>
+          <div class="training-screen-block">
+            <div class="service-screen-price-title">
+              <h3>Цена:</h3>
+            </div>
+            <div class="service-screen-price">
+              <div class="service-screen-price-bottom">
+                <div class="service-screen-price-container">
+                  <div class="service-screen-personal">
+                    <div>Индивидуальная</div>
+                  </div>
+                  <div class="service-screen-personal-price">
+                    <div class="service-price-container">20 <span class="price-currency">BYN</span></div>
+                  </div>
                 </div>
-                <div class="service-screen-personal-price">
-                  <div class="service-price-container">20 <span class="price-currency">BYN</span></div>
-                </div>
-              </div>
-              <div class="service-screen-price-container">
-                <div class="service-screen-grup">
-                  <div>Мини-группа</div>
-                </div>
-                <div class="service-screen-grup-price">
-                  <div class="service-price-container">15 <span class="price-currency">BYN</span><span
-                      class="price-by-person">/чел</span></div>
+                <div class="service-screen-price-container">
+                  <div class="service-screen-grup">
+                    <div>Мини-группа</div>
+                  </div>
+                  <div class="service-screen-grup-price">
+                    <div class="service-price-container">15 <span class="price-currency">BYN</span><span
+                        class="price-by-person">/чел</span></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="training-screen">
-      <div class="training-screen-right">
-        <div class="training-screen-block">
-          <div class="training-screen-right-title _anim-items">
-            <h2>Тренировка в бросковой комнате
-            </h2>
-            <hr class="price-subscription-training-types-line">
+      <div class="training-screen training-web">
+        <div class="training-screen-right">
+          <div class="training-screen-block">
+            <div class="training-screen-right-title _anim-items">
+              <h2>Тренировка в бросковой комнате
+              </h2>
+              <hr class="price-subscription-training-types-line">
+            </div>
+            <div class="training-screen-right-title-description">
+              <ul class="training-points _anim-items">
+                <li>Совершенствование броска</li>
+                <li>Отработка кистивых бросков</li>
+                <li>Контроль и точное ведение шайбы</li>
+                <li>Улучшение и тренировка моторики кисти руки</li>
+                <li>Обучение приёмам владения клюшкой</li>
+                <li>Обучение и совершенствование техники броска</li>
+              </ul>
+            </div>
           </div>
-          <div class="training-screen-right-title-description">
-            <ul class="training-points _anim-items">
-              <li>Совершенствование броска</li>
-              <li>Отработка кистивых бросков</li>
-              <li>Контроль и точное ведение шайбы</li>
-              <li>Улучшение и тренировка моторики кисти руки</li>
-              <li>Обучение приёмам владения клюшкой</li>
-              <li>Обучение и совершенствование техники броска</li>
-            </ul>
-          </div>
-        </div>
-        <div class="training-screen-block">
-          <div class="service-screen-price-title">
-            <h3>Цена:</h3>
-          </div>
-          <div class="service-screen-price">
-            <div class="service-screen-price-bottom">
-              <div class="service-screen-price-container">
-                <div class="service-screen-personal">
-                  <div>Индивидуальная</div>
+          <div class="training-screen-block">
+            <div class="service-screen-price-title">
+              <h3>Цена:</h3>
+            </div>
+            <div class="service-screen-price">
+              <div class="service-screen-price-bottom">
+                <div class="service-screen-price-container">
+                  <div class="service-screen-personal">
+                    <div>Индивидуальная</div>
+                  </div>
+                  <div class="service-screen-personal-price">
+                    <div class="service-price-container">15 <span class="price-currency">BYN</span></div>
+                  </div>
                 </div>
-                <div class="service-screen-personal-price">
-                  <div class="service-price-container">15 <span class="price-currency">BYN</span></div>
+                <div class="service-screen-price-container">
+                  <div class="service-screen-grup">
+                    <div>Мини-группа</div>
+                  </div>
+                  <div class="service-screen-grup-price">
+                    <div class="service-price-container">10 <span class="price-currency">BYN</span><span
+                        class="price-by-person">/чел</span></div>
+                  </div>
                 </div>
               </div>
-              <div class="service-screen-price-container">
-                <div class="service-screen-grup">
-                  <div>Мини-группа</div>
+            </div>
+          </div>
+        </div>
+        <div class="training-screen-left">
+          <div class="training-screen-box">
+            <div class="training-screen-container">
+              <img src="assets/images/shot-photo.jpg" alt="shot">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="training-screen training-mobile">
+        <div class="training-screen-left">
+          <div class="training-screen-box">
+            <div class="training-screen-container">
+              <img src="assets/images/shot-photo.jpg" alt="shot">
+            </div>
+          </div>
+        </div>
+        <div class="training-screen-right">
+          <div class="training-screen-block">
+            <div class="training-screen-right-title _anim-items">
+              <h2>Тренировка в бросковой комнате
+              </h2>
+              <hr class="price-subscription-training-types-line">
+            </div>
+            <div class="training-screen-right-title-description">
+              <ul class="training-points _anim-items">
+                <li>Совершенствование броска</li>
+                <li>Отработка кистивых бросков</li>
+                <li>Контроль и точное ведение шайбы</li>
+                <li>Улучшение и тренировка моторики кисти руки</li>
+                <li>Обучение приёмам владения клюшкой</li>
+                <li>Обучение и совершенствование техники броска</li>
+              </ul>
+            </div>
+          </div>
+          <div class="training-screen-block">
+            <div class="service-screen-price-title">
+              <h3>Цена:</h3>
+            </div>
+            <div class="service-screen-price">
+              <div class="service-screen-price-bottom">
+                <div class="service-screen-price-container">
+                  <div class="service-screen-personal">
+                    <div>Индивидуальная</div>
+                  </div>
+                  <div class="service-screen-personal-price">
+                    <div class="service-price-container">15 <span class="price-currency">BYN</span></div>
+                  </div>
                 </div>
-                <div class="service-screen-grup-price">
-                  <div class="service-price-container">10 <span class="price-currency">BYN</span><span
-                      class="price-by-person">/чел</span></div>
+                <div class="service-screen-price-container">
+                  <div class="service-screen-grup">
+                    <div>Мини-группа</div>
+                  </div>
+                  <div class="service-screen-grup-price">
+                    <div class="service-price-container">10 <span class="price-currency">BYN</span><span
+                        class="price-by-person">/чел</span></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="training-screen-left">
-        <div class="training-screen-box">
-          <div class="training-screen-container">
-            <img src="assets/images/shot-photo.jpg" alt="shot">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="training-screen">
-      <div class="training-screen-left">
-        <div class="training-screen-box">
-          <div class="training-screen-container">
-            <img src="assets/images/gym-photo.jpg" alt="hockey">
-          </div>
-        </div>
-      </div>
-      <div class="training-screen-right">
-        <div class="training-screen-block">
-          <div class="training-screen-right-title _anim-items">
-            <h2>Общая физическая подготовка для хоккеистов
-            </h2>
-            <hr class="price-subscription-training-types-line">
-          </div>
-          <div class="training-screen-right-title-description">
-            <ul class="training-points _anim-items">
-              <li>Тренировка на выносливость</li>
-              <li>Развитие координационных способностей</li>
-              <li>Скоростно-силовые тренировки</li>
-              <li>Упражнения на быстроту</li>
-            </ul>
-          </div>
-        </div>
-        <div class="training-screen-block">
-          <div class="service-screen-price-title">
-            <h3>Цена:</h3>
-          </div>
-          <div class="service-screen-price">
-            <div class="service-screen-price-bottom">
-              <div class="service-screen-price-container">
-                <div class="service-screen-personal">
-                  <div>Индивидуальная</div>
-                </div>
-                <div class="service-screen-personal-price">
-                  <div class="service-price-container">15 <span class="price-currency">BYN</span></div>
-                </div>
-              </div>
-              <div class="service-screen-price-container">
-                <div class="service-screen-grup">
-                  <div>Мини-группа</div>
-                </div>
-                <div class="service-screen-grup-price">
-                  <div class="service-price-container">10 <span class="price-currency">BYN</span><span
-                      class="price-by-person">/чел</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="price-screen">
+      <div class="training-screen">
+        <div class="training-screen-left">
+          <div class="training-screen-box">
+            <div class="training-screen-container">
+              <img src="assets/images/gym-photo.jpg" alt="hockey">
+            </div>
+          </div>
+        </div>
+        <div class="training-screen-right">
+          <div class="training-screen-block">
+            <div class="training-screen-right-title _anim-items">
+              <h2>Общая физическая подготовка для хоккеистов
+              </h2>
+              <hr class="price-subscription-training-types-line">
+            </div>
+            <div class="training-screen-right-title-description">
+              <ul class="training-points _anim-items">
+                <li>Тренировка на выносливость</li>
+                <li>Развитие координационных способностей</li>
+                <li>Скоростно-силовые тренировки</li>
+                <li>Упражнения на быстроту</li>
+              </ul>
+            </div>
+          </div>
+          <div class="training-screen-block">
+            <div class="service-screen-price-title">
+              <h3>Цена:</h3>
+            </div>
+            <div class="service-screen-price">
+              <div class="service-screen-price-bottom">
+                <div class="service-screen-price-container">
+                  <div class="service-screen-personal">
+                    <div>Индивидуальная</div>
+                  </div>
+                  <div class="service-screen-personal-price">
+                    <div class="service-price-container">15 <span class="price-currency">BYN</span></div>
+                  </div>
+                </div>
+                <div class="service-screen-price-container">
+                  <div class="service-screen-grup">
+                    <div>Мини-группа</div>
+                  </div>
+                  <div class="service-screen-grup-price">
+                    <div class="service-price-container">10 <span class="price-currency">BYN</span><span
+                        class="price-by-person">/чел</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="price-screen-id" class="price-screen">
       <div class="screen-title">
         Цены
       </div>
@@ -412,47 +468,47 @@
         </div>
       </div>
     </div>
-    <div class="screen-title">
-      Контакты
-    </div>
-    <div class="contacts-screen">
-      <div class="social-media-item">
-        <a href="https://www.instagram.com/kulin91/" target="_blank">
-          <img src="assets/images/instagram.png" alt="Inst">
-        </a>
-        <div class="social-media-item-text">Instagram</div>
+    <div id="contacts-screen-id" class="contacts-screen">
+      <div class="screen-title">
+        Контакты
       </div>
-      <div class="social-media-item">
-        <a href="https://vk.com/kulin91" target="_blank">
-          <img src="assets/images/vk.png" alt="VK">
-        </a>
-        <div class="social-media-item-text">VK</div>
+      <div id="contacts-screen-id" class="contacts-container">
+        <div class="social-media-item">
+          <a href="https://www.instagram.com/kulin91/" target="_blank">
+            <img src="assets/images/instagram.png" alt="Inst">
+          </a>
+          <div class="social-media-item-text">Instagram</div>
+        </div>
+        <div class="social-media-item">
+          <a href="https://vk.com/kulin91" target="_blank">
+            <img src="assets/images/vk.png" alt="VK">
+          </a>
+          <div class="social-media-item-text">VK</div>
+        </div>
+        <div class="social-media-item">
+          <a href="tel:+375293406704">
+            <img src="assets/images/call.png" alt="Call">
+          </a>
+          <div class="social-media-item-text">Call</div>
+        </div>
+        <div class="social-media-item">
+          <a href="https://telegram.me/kulin91" target="_blank">
+            <img src="assets/images/tg.png" alt="Telegram">
+          </a>
+          <div class="social-media-item-text">Telegram</div>
+        </div>
+        <div class="social-media-item">
+          <a href="viber://chat?number=%2B375293406704" target="_blank">
+            <img src="assets/images/viber.png" alt="Viber">
+          </a>
+          <div class="social-media-item-text">Viber</div>
+        </div>
       </div>
-      <div class="social-media-item">
-        <a href="tel:+375293406704">
-          <img src="assets/images/call.png" alt="Call">
-        </a>
-        <div class="social-media-item-text">Call</div>
-      </div>
-      <div class="social-media-item">
-        <a href="https://telegram.me/kulin91" target="_blank">
-          <img src="assets/images/tg.png" alt="Telegram">
-        </a>
-        <div class="social-media-item-text">Telegram</div>
-      </div>
-      <div class="social-media-item">
-        <a href="viber://chat?number=%2B375293406704" target="_blank">
-          <img src="assets/images/viber.png" alt="Viber">
-        </a>
-        <div class="social-media-item-text">Viber</div>
-      </div>
-
     </div>
   </main>
   <footer class="footer">
-    <div class="footer-one">ИП 191747533</div>
-    <div class="footer-two">Все права защищены</div>
-    <div class="footer-three">2021</div>
+    <div class="footer-location">Минск, Беларусь</div>
+    <div class="footer-copyrights">&copy; 2021 Podkatki.by</div>
   </footer>
   <script src="script.js"></script>
 </body>
