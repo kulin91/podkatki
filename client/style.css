@@ -55,17 +55,22 @@
   font-size: 14px;
   color: white;
   text-decoration: none;
+    transition: background-color 1s linear;
 }
 
-.header-linkss {
+.header-links-number:hover{
+  color: #0c4bd4;
+}
+
+.header-link {
   padding-left: 12px;
   font-weight: bold;
   font-size: large;
   transition: background-color 1s linear;
 }
 
-.header-linkss:hover {
-  background-color: #3F51B5;
+.header-link:hover {
+  color: #0c4bd4;
   }
 
 .main {
@@ -166,9 +171,9 @@
   background-color: #212121;
   box-shadow: 0px 0px 9px 3px rgba(73, 72, 72, 0.25);
   border: 1px solid #616161; 
-       box-shadow: 0px 0px 24px #616161;
-      -webkit-box-shadow: 2px 2px 3px #616161;
-      -moz-box-shadow: 2px 2px 3px #616161;
+  box-shadow: 0px 0px 24px #616161;
+  -webkit-box-shadow: 2px 2px 3px #616161;
+  -moz-box-shadow: 2px 2px 3px #616161;
 }
 
 .about-me-box {
@@ -178,7 +183,7 @@
   height: 90%;
   display: flex;
   flex-direction: column;
-    box-shadow: 8px 8px 8px 4px rgba(207, 207, 212, 0.342);
+  box-shadow: 8px 8px 8px 4px rgba(207, 207, 212, 0.342);
   border: 1px solid #F5F5F5;
   border-radius: 1%;
 }
@@ -200,8 +205,8 @@
   align-items: center;
   justify-content: center;
   background-color: aliceblue;
-  height: 90%;
-  width: 90%;
+  height: 450px;
+  width: 450px;
 }
 
 .about-me-screen-left {
@@ -222,7 +227,7 @@
   height: 450px;
   position: relative;
   overflow: hidden;
-  border-radius: 4%;
+  /* border-radius: 4%; */
 }
 
 .about-me-screen-photo {
@@ -319,6 +324,19 @@
 
 .training-screen-left {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.training-screen-box {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .training-screen-right {
@@ -445,7 +463,12 @@
   align-items: center;
   border: 1px solid #F5F5F5;
   /* justify-content: center; */
+  transition: 1s;
 }
+
+   .price-container:hover {
+    transform: scale(1.1);
+   }
 
 .price-currency {
   font-size: 12px;
@@ -594,6 +617,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.5s;
+}
+
+.social-media-item:hover {
+  transform: scale(1.2);
 }
 
 .social-media-item-text {
@@ -611,6 +639,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
+  background-color: #212121;
 }
 
 
