@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Oswald', sans-serif;
+  user-select: none;
   /* color: #212121; */
 }
 
@@ -163,18 +164,13 @@
 
 .screen-title {
   display: flex;
-  height: 76px;
+  /* height: 76px; */
   align-items: center;
   justify-content: center;
   font-size: 48px;
   font-weight: bold;
-  color: white;
-  background-color: #212121;
-  box-shadow: 0px 0px 9px 3px rgba(73, 72, 72, 0.25);
-  border: 1px solid #616161; 
-  box-shadow: 0px 0px 24px #616161;
-  -webkit-box-shadow: 2px 2px 3px #616161;
-  -moz-box-shadow: 2px 2px 3px #616161;
+  padding: 20px;
+  border-top: 1px solid #E0E0E0;
 }
 
 .about-me-box {
@@ -312,12 +308,11 @@
 } */
 
  .training-screen {
-   height: 500px;
+  height: 500px;
   display: flex;
-   margin-left: 204px;
+  margin-left: 204px;
   margin-right: 204px; 
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   box-shadow: 8px 8px 8px 4px rgba(207, 207, 212, 0.342);
   border: 1px solid #f5f5f5e1;
   border-radius: 1%;
@@ -357,10 +352,16 @@
   flex: 1;
 }
 
+.training-screen-right-title h2 {
+  margin-bottom: 10px;
+}
+
 .training-screen-right-title {
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 
   transform: translate(0px, 120%);
   opacity: 0;
@@ -445,16 +446,18 @@
 }
 
 .price-screen-container {
-  height: 80%;
-  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.price-discount {
+  color: #424242;
+}
+
 .price-container {
-  height: 90%;
-  width: 20%;
+  height: 550px;
+  width: 350px;
   border-collapse: collapse;
   display: flex;
   flex-direction: column;
@@ -547,7 +550,7 @@
 }
 
 .price-screen-box {
-  height: 80%;
+  height: calc(100vh - 152px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -555,18 +558,21 @@
 }
 
 .price-screen-attention {
-  padding-left: 128px;
+  /* padding-left: 128px; */
+  flex: 1;
 }
 
 .price-subscription-training-types {
   margin-top: 24px;
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .price-subscription-training-types-line {
-  height: 2px;
-  width:100%;
-  background-color: black;
+  width: 200px;
+  background-color: #212121;
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -594,6 +600,13 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+}
+
+.price-subscription-training {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .price-culc-training-container {
