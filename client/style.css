@@ -629,7 +629,7 @@
   display: none;
 }
 
-/* @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 
 .about-me-screen {
   height: 1442px;
@@ -646,7 +646,7 @@
 .block-text {
   font-size: 22px;
 }
-} */
+}
 
 @media only screen and (max-width: 1260px) {
   .price-container {
