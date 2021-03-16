@@ -6,6 +6,8 @@
   color: #212121;
 }
 
+
+
 .header {
   box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
   display: flex;
@@ -499,13 +501,14 @@
 }
 
 .price-screen {
-  height: calc(100vh - 76px);
+  min-height: calc(100vh - 76px);
   display: flex;
   flex-direction: column;
 }
 
 .price-screen-box {
-  height: calc(100vh - 152px);
+  /* height: calc(100vh - 152px); */
+  /* height: 100px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -514,6 +517,7 @@
 
 .price-screen-attention {
   flex: 1;
+  margin-bottom: 44px
 }
 
 .price-subscription-training-types {
@@ -625,8 +629,26 @@
   display: none;
 }
 
+/* @media only screen and (max-width: 500px) {
+
+.about-me-screen {
+  height: 1442px;
+}
+
+.about-me-box-title {
+  font-size: 41px;
+}
+
+.block-title {
+  font-size: 38px;
+}
+
+.block-text {
+  font-size: 22px;
+}
+} */
+
 @media only screen and (max-width: 1260px) {
-  
   .price-container {
     width: 250px;
   }
@@ -634,47 +656,69 @@
 
 
 @media only screen and (max-width: 920px) {
-  
-  .price-screen-container {
-    flex-wrap: wrap;
-  }
-
-  .price-container {
-    width: 350px;
-  }
-  
-  .about-me-container {
-    flex-wrap: wrap;
-  }
-
-  .header-box-left {
-    padding-left: 0;
-  }
-
-  .header-box-right-container {
-    margin-right: 0;
-  }
-
-  .training-web {
-    display: none;
-  }
-
-  .training-mobile {
-    display: block;
-  }
-  
-  .price-screen {
-    height: 2056px;
-  }
-
-  .price-screen-box {
-    height: 1944px;
-  }
-
-  .training-screen {
-    height: auto;
-    flex-wrap: wrap;
-  } 
+  h1 {
+  font-size: 48px;
 }
+
+  h2 {
+  font-size: 33px;
+}
+
+.background-video-container {
+  height: 0px;
+  width: 0px;
+}
+
+.price-screen-container {
+    flex-wrap: wrap;
+}
+
+.price-container {
+  width: 350px;
+}
+
+.about-me-screen {
+  border-top: 1px solid #E0E0E0;
+  height: 1100px;
+}
+
+.about-me-container {
+    flex-wrap: wrap;
+}
+
+.header-box-left {
+  padding-left: 0;
+}
+
+.header-box-right-container {
+  margin-right: 0;
+}
+
+.training-web {
+  display: none;
+}
+
+.training-mobile {
+  display: block;
+}
+
+.price-screen {
+  height: 2056px;
+}
+
+.price-screen-box {
+  height: 1944px;
+}
+
+.training-screen {
+  height: auto;
+  flex-wrap: wrap;
+} 
+}
+
+
+
+
+
 
 
