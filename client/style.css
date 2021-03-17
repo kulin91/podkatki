@@ -776,6 +776,10 @@
     font-size: 33px;
   }
 
+  .first-screen {
+    background-color: honeydew;
+  }
+
   .background-video-container {
     height: 0px;
     width: 0px;
@@ -823,8 +827,21 @@
   }
 
   .training-screen {
-    height: auto;
+    height: 1092px;
     flex-wrap: wrap;
+  }
+
+  .training-screen-container img{
+    width: 400px;
+    height: 400px;
+  }
+
+  .training-screen-right-title-description {
+    font-size: 24px;
+  }
+  
+  .service-screen-price-bottom {
+    font-size: 26px;
   }
 }
 
