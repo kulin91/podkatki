@@ -702,6 +702,8 @@
   -moz-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
+  width: 50%;
+  align-items: center;
 }
 .burger-menu_active .burger-menu_nav {
   right: 0;
@@ -742,7 +744,13 @@
 }
 /* Burger end */
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
+  
+  .burger-menu-nav {
+    width: 50%;
+    align-items: center;
+  }
+  
   .about-me-screen {
     height: 1442px;
   }
@@ -758,7 +766,7 @@
   .block-text {
     font-size: 22px;
   }
-}
+} */
 
 @media only screen and (max-width: 1260px) {
   .price-container {
@@ -767,7 +775,7 @@
 }
 
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1000px) {
   h1 {
     font-size: 48px;
   }
@@ -776,8 +784,21 @@
     font-size: 33px;
   }
 
+  .header {
+    height: 100px;
+  }
+
+  .burger-menu_button {
+    width: 140px;
+    height: 98px;
+  }
+
   .first-screen {
     background-color: honeydew;
+  }
+
+  .first-screen-description h2{
+    display: none;
   }
 
   .background-video-container {
@@ -785,12 +806,21 @@
     width: 0px;
   }
 
+  #price-error {
+    margin-top: 38px;
+  }
+
   .price-screen-container {
       flex-wrap: wrap;
   }
 
+  .price-screen-attention {
+    font-size: 23px;
+  }
+
   .price-container {
     width: 350px;
+    font-size: 23px;
   }
 
   .about-me-screen {
@@ -842,6 +872,16 @@
   
   .service-screen-price-bottom {
     font-size: 26px;
+  }
+
+  .social-media-item {
+    font-size: 26px;
+    width: 66px;
+    height: 66px;
+  }
+
+  .footer {
+    font-size: 21px;
   }
 }
 
