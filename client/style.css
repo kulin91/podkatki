@@ -625,27 +625,139 @@
   color: white;
 }
 
-.training-mobile {
+.display-mobile {
   display: none;
 }
 
+/* Burger start */
+
+.burger-menu_button {
+  z-index: 100000000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_button:hover .burger-menu_lines {
+  filter: brightness(0.7);
+}
+
+.burger-menu_lines::before,
+.burger-menu_lines::after,
+.burger-menu_lines {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #ececec;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-menu_lines::before {
+  content: '';
+  top: -12px;
+}
+.burger-menu_lines::after {
+  content: '';
+  top: 12px;
+}
+
+.burger-menu_active .burger-menu_lines {
+  background-color: transparent;
+}
+.burger-menu_active .burger-menu_lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.burger-menu_active .burger-menu_lines::after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu_nav {
+  display: flex;
+  padding-top: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #fff8fe;
+  overflow-y: auto;
+  right: -100%;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.burger-menu_active .burger-menu_nav {
+  right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_link {
+  padding: 18px 35px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #000000;
+  border-bottom: 1px solid #fff;
+}
+.burger-menu_link:first-child {
+  border-top: 1px solid #fff;
+}
+.burger-menu_link:hover {
+  filter: brightness(0.9);
+}
+.burger-menu_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.burger-menu_active .burger-menu_overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* Burger end */
+
 @media only screen and (max-width: 500px) {
+  .about-me-screen {
+    height: 1442px;
+  }
 
-.about-me-screen {
-  height: 1442px;
-}
+  .about-me-box-title {
+    font-size: 41px;
+  }
 
-.about-me-box-title {
-  font-size: 41px;
-}
+  .block-title {
+    font-size: 38px;
+  }
 
-.block-title {
-  font-size: 38px;
-}
-
-.block-text {
-  font-size: 22px;
-}
+  .block-text {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 1260px) {
@@ -657,65 +769,64 @@
 
 @media only screen and (max-width: 920px) {
   h1 {
-  font-size: 48px;
-}
+    font-size: 48px;
+  }
 
-  h2 {
-  font-size: 33px;
-}
+    h2 {
+    font-size: 33px;
+  }
 
-.background-video-container {
-  height: 0px;
-  width: 0px;
-}
+  .background-video-container {
+    height: 0px;
+    width: 0px;
+  }
 
-.price-screen-container {
+  .price-screen-container {
+      flex-wrap: wrap;
+  }
+
+  .price-container {
+    width: 350px;
+  }
+
+  .about-me-screen {
+    border-top: 1px solid #E0E0E0;
+    height: 1100px;
+  }
+
+  .about-me-container {
+      flex-wrap: wrap;
+  }
+
+  .header-box-left {
+    padding-left: 0;
+  }
+
+  .header-box-right-container {
+    margin-right: 0;
+  }
+
+  .display-web {
+    display: none;
+  } 
+
+  .display-mobile {
+    display: block;
+  }
+
+  .price-screen {
+    height: 2056px;
+  }
+
+  .price-screen-box {
+    height: 1944px;
+  }
+
+  .training-screen {
+    height: auto;
     flex-wrap: wrap;
+  }
 }
-
-.price-container {
-  width: 350px;
-}
-
-.about-me-screen {
-  border-top: 1px solid #E0E0E0;
-  height: 1100px;
-}
-
-.about-me-container {
-    flex-wrap: wrap;
-}
-
-.header-box-left {
-  padding-left: 0;
-}
-
-.header-box-right-container {
-  margin-right: 0;
-}
-
-.training-web {
-  display: none;
-}
-
-.training-mobile {
-  display: block;
-}
-
-.price-screen {
-  height: 2056px;
-}
-
-.price-screen-box {
-  height: 1944px;
-}
-
-.training-screen {
-  height: auto;
-  flex-wrap: wrap;
-} 
-}
-
 
 
 
