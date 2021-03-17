@@ -4,8 +4,15 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-// viewed at http://localhost:8080
 app.use(express.static("client"));
+
+app.get('/robots.txt', function (req, res) {
+  res.sendFile(path.join(__dirname + '/metadata/robots.txt'));
+});
+
+app.get('/sitemap.xml', function (req, res) {
+  res.sendFile(path.join(__dirname + '/metadata/sitemap.xml'));
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/client/index.html'));

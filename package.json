@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon ./index.js",
-    "start": "node ./index.js",
-    "deploy": "git push heroku master"
+    "start": "node ./index.js"
   },
   "repository": {
     "type": "git",

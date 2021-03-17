@@ -646,6 +646,11 @@
   display: none;
 }
 
+.social-media-link {
+  width: 100%;
+  height: 100%;
+}
+
 /* Burger start */
 
 .burger-menu_button {
