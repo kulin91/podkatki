@@ -129,7 +129,7 @@
   transition: all 0.8s ease 0s;
 }
 
-.first-screen-title._active {
+.first-screen-title.animation-active {
   margin-bottom: 60px;
   align-items: center;
   text-align: center;
@@ -149,7 +149,7 @@
   transition: all 0.8s ease 0.4s;
 }
 
-.first-screen-description._active {
+.first-screen-description.animation-active {
   text-align: center;
   font-size: large;
   margin-left: 200px;
@@ -352,7 +352,7 @@
   transition: all 0.8s ease 0s;
 }
 
-.training-screen-right-title._active {
+.training-screen-right-title.animation-active {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -372,31 +372,31 @@
   transition: all 0.3s ease 0s;
 }
 
-.training-points._active li:nth-child(1){
+.training-points.animation-active li:nth-child(1){
   transition: all 0.8s ease 0s;
 }
 
-.training-points._active li:nth-child(2){
+.training-points.animation-active li:nth-child(2){
   transition: all 0.8s ease 0.1s;
 }
 
-.training-points._active li:nth-child(3){
+.training-points.animation-active li:nth-child(3){
   transition: all 0.8s ease 0.2s;
 }
 
-.training-points._active li:nth-child(4){
+.training-points.animation-active li:nth-child(4){
   transition: all 0.8s ease 0.3s;
 }
 
-.training-points._active li:nth-child(5){
+.training-points.animation-active li:nth-child(5){
   transition: all 0.8s ease 0.4s;
 }
 
-.training-points._active li:nth-child(6){
+.training-points.animation-active li:nth-child(6){
   transition: all 0.8s ease 0.5s;
 }
 
-.training-points._active li{
+.training-points.animation-active li{
   transform: translate(0px, 0px);
 }
 
