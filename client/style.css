@@ -827,6 +827,10 @@
     height: 98px;
   }
 
+  .burger-menu_link {
+    cursor: pointer;
+  }
+
   /* .first-screen {
     background-color: honeydew;
   } */

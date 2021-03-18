@@ -88,8 +88,8 @@ const imageCarousel = () => {
   }, interval);
 }
 
-const linksNavigator = () => {
-  const headerLinks = document.getElementById('header-links');
+const linksNavigator = (selector) => {
+  const headerLinks = document.getElementById(selector);
   const firstScreen = document.getElementById('first-screen-id').offsetHeight;
   const aboutMeScreen = document.getElementById('about-me-screen-id').offsetHeight;
   const trainingScreen = document.getElementById('training-screen-id').offsetHeight;
@@ -106,19 +106,23 @@ const linksNavigator = () => {
     let scrollHeight = 0;
 
     switch (event.target.id) {
-      case 'header-link__about-me': {
+      case 'header-link__about-me': 
+      case 'burger-about-me-screen-id': {
         scrollHeight = screenHeights.aboutMe;
         break;
       }
-      case 'header-link__training': {
+      case 'header-link__training': 
+      case 'burger-training-screen-id': {
         scrollHeight = screenHeights.training;
         break;
       }
-      case 'header-link__price': {
+      case 'header-link__price': 
+      case 'burger-price-screen-id': {
         scrollHeight = screenHeights.price;
         break;
       }
-      case 'header-link__contacts': {
+      case 'header-link__contacts': 
+      case 'burger-contacts-screen-id': {
         scrollHeight = screenHeights.contacts;
         break;
       }
@@ -135,7 +139,10 @@ const linksNavigator = () => {
     }
   }
 
-  headerLinks.addEventListener('click', scrollHandler);
+  if (headerLinks) {
+    headerLinks.addEventListener('click', scrollHandler);
+  }
+  
 }
 
 const burgerMenu = (selector) => {
@@ -166,5 +173,6 @@ const burgerMenu = (selector) => {
 
 animateText();
 imageCarousel();
-linksNavigator();
+linksNavigator('header-links');
+linksNavigator('burger-menu_nav-id');
 burgerMenu('.burger-menu');
